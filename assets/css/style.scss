@@ -1,0 +1,387 @@
+@use "./partials/colors";
+@use "./partials/mixins";
+@use "./partials/global";
+
+/* Start Media Query */
+
+@media (max-width: 767px) {
+}
+
+/*Small Screen*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  nav {
+    .menu {
+      justify-content: center;
+      img.logo {
+        width: 60px;
+      }
+    }
+  }
+}
+
+/*Medium Screen*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+/*Larger Screen*/
+
+/* End Media Query */
+
+/************** Start services_card ***********/
+
+.services_card {
+  padding: 25px;
+  box-shadow: global.$main-shadow;
+  background-color: #fff;
+
+  .title {
+    padding-inline-start: 20px;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 17px;
+
+    @media screen and (max-width: 425px) {
+      font-size: 16px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      @include mixins.dir-left(0);
+      top: 50%;
+      transform: translateY(-50%);
+      @include mixins.shape(13px, 50%);
+      background-color: map_get(colors.$theme-colors, secondary);
+    }
+  }
+
+  .services_desc {
+    font-size: 15px;
+    line-height: 32px;
+    color: map_get(colors.$theme-colors, grey);
+    @include mixins.clamp(4);
+    height: 125px;
+
+    @media screen and (max-width: 425px) {
+      font-size: 14px;
+    }
+  }
+}
+
+/************** End services_card ***********/
+
+/************** Start how_sec ***********/
+
+.how_sec {
+  @include mixins.border-radius(10px);
+
+  .how_steps {
+    border-top: 1px solid #fff;
+    overflow: hidden;
+
+    .step {
+      color: #fff;
+      .step_circle {
+        margin-top: -13px;
+        @include mixins.shape(26px, 50%);
+        margin-bottom: 5px;
+      }
+
+      .step_num {
+        font-size: 20px;
+        margin-inline-start: 8px;
+        margin-bottom: 5px;
+      }
+
+      .step_title {
+        font-size: 16px;
+        position: relative;
+        margin-bottom: 26px;
+        line-height: 1.9;
+        font-weight: 500;
+
+        @media screen and (max-width: 991px) {
+          font-size: 15px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -13px;
+          @include mixins.dir-left(0);
+          // height: 1px;
+          width: 60px;
+          border: 2px solid map_get(colors.$theme-colors, secondary);
+          @include mixins.transition(all 0.3s ease-in-out);
+          @include mixins.border-radius(0 10px);
+        }
+      }
+
+      .step_desc {
+        font-size: 14px;
+        line-height: 1.9;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+/************** End how_sec ***********/
+
+/********************* Start video_sec section *********************/
+
+.video_sec {
+  position: relative;
+  overflow: hidden;
+  @include mixins.border-radius(10px);
+  .main_video {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .play_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .video_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @extend .flex-center;
+    z-index: 3;
+    @include mixins.transition(all 0.3s ease-in-out);
+    background-color: rgba($color: #000000, $alpha: 65%);
+
+    .icon {
+      color: #fff;
+      font-size: 45px;
+      cursor: pointer;
+    }
+  }
+}
+
+/********************* End video_sec section *********************/
+
+/********************* Start feature_card section *********************/
+
+.feature_card {
+  padding: 25px;
+  @include mixins.border-radius(10px);
+  color: #fff;
+
+  .feature_icon {
+    @include mixins.shape(75px, 50%);
+    background-color: #fff;
+    @extend .flex-center;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 425px) {
+      @include mixins.shape(65px, 50%);
+    }
+
+    .ic {
+      max-width: 35px;
+
+      @media screen and (max-width: 425px) {
+        max-width: 26px;
+      }
+    }
+  }
+
+  .feature_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 16px;
+    }
+  }
+
+  .feature_desc {
+    font-size: 15px;
+
+    @media screen and (max-width: 425px) {
+      font-size: 14px;
+    }
+  }
+}
+
+/********************* End feature_card section *********************/
+
+/********************* Start faqs section *********************/
+.faqs_sec {
+  @include mixins.border-radius(10px);
+}
+
+/**** Accordion ****/
+.accordion-item {
+  margin-bottom: 12px;
+  border: none;
+  padding: 0 20px;
+  @include mixins.border-radius(7px);
+  position: relative;
+  overflow: hidden;
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(-7deg);
+    }
+  }
+
+  .circle1,
+  .circle2 {
+    position: absolute;
+    top: -50px;
+    @include mixins.shape(95px, 50%);
+    object-fit: cover;
+    transform-origin: 200% center;
+    animation: rotate 3s linear alternate infinite,
+      rotate 3s linear alternate infinite;
+  }
+
+  .circle1 {
+    @include mixins.dir-right(2px);
+    background-color: map_get(colors.$theme-colors, secondary);
+    opacity: 0.7;
+    z-index: 3;
+  }
+
+  .circle2 {
+    @include mixins.dir-right(-40px);
+    background-color: map_get(colors.$theme-colors, primary);
+    opacity: 0.4;
+    z-index: 2;
+    animation-delay: 1.5s;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:has(.collapsed) {
+    .circle1,
+    .circle2 {
+      animation: none;
+    }
+  }
+
+  .accordion-button {
+    background-color: transparent;
+    padding: 12px 0;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #202020;
+    border: none;
+    box-shadow: none !important;
+    padding-inline-start: 20px;
+    position: relative;
+    font-weight: 500;
+    z-index: 5;
+
+    &::before {
+      content: "";
+      position: absolute;
+      @include mixins.dir-left(0);
+      top: 50%;
+      transform: translateY(-50%);
+      @include mixins.shape(13px, 50%);
+      background-color: map_get(colors.$theme-colors, secondary);
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 15px;
+    }
+
+    &::after {
+      @include mixins.shape(30px, 50%);
+      background-color: map_get(colors.$theme-colors, primary);
+      @extend .flex-center;
+      background-image: none;
+      content: "\2b";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 800;
+      color: #fff;
+      font-size: 13px;
+      z-index: 5;
+    }
+
+    &:not(.collapsed) {
+      &::after {
+        content: "\f068";
+      }
+    }
+  }
+
+  .accordion-body {
+    padding: 0.5rem 0.7rem 1rem;
+    color: map_get(colors.$theme-colors, gray);
+    line-height: 1.9;
+
+    @media screen and (max-width: 425px) {
+      font-size: 14px;
+    }
+  }
+}
+
+/********************* End faqs section *********************/
+
+/********************* Start contact section *********************/
+
+.contact_img {
+  max-width: 100%;
+  max-height: 360px;
+
+  @media screen and (max-width: 991px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    max-height: 300px;
+    opacity: 0.3;
+  }
+}
+
+/********************* End contact section *********************/
+
+/********************* Start choose_login_btns section *********************/
+.choose_login_btns {
+  @extend .flex-center;
+  gap: 15px;
+  .choose_btn {
+    border: 2px solid map_get(colors.$theme-colors, hint);
+    background: map_get(colors.$theme-colors, gray_light);
+    color: map_get(colors.$theme-colors, primary);
+    @include mixins.border-radius(0 10px);
+    // width: 190px;
+    width: 100%;
+    height: 80px;
+    @include mixins.transition(all 0.3s ease);
+    font-size: 14px;
+
+    @media screen and (max-width: 425px) {
+      height: 70px; 
+      font-size: 13px;
+    }
+
+    &.active {
+      border-color: map_get(colors.$theme-colors, secondary);
+      font-weight: 700;
+    }
+  }
+}
+/********************* End choose_login_btns section *********************/

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<!-- if english add lang="en" dir="ltr" -->
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Home</title>
+  <link rel="shortcut icon" href="assets/imgs/color_logo.png" />
+
+  <!-- bootstrap 5 if english -->
+  <!-- <link href="./assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- bootstrap 5 if arabic -->
+  <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.rtl.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./assets/plugins/fontawesome-free-6.2.0-web/css/all.min.css">
+
+  <!-- owl carousel -->
+  <link rel="stylesheet" media="all" href="./assets/plugins/OwlCarousel2-2.3.4/dist_2/assets/owl.carousel.min.css" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- FancyBox -->
+  <link rel="stylesheet" href="./assets/plugins/FancyBox/jquery.fancybox.min.css">
+
+  <!-- select 2 -->
+  <link rel="stylesheet" href="./assets/plugins/select2/select2.min.css">
+
+  <!-- intlTelInput -->
+  <link rel="stylesheet" href="./assets/plugins/flag/css/intlTelInput.css">
+
+  <!-- main css file -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<!-- if arabic add class="ltr" dir="ltr" to body  -->
+
+<body>
+  <!-- ******* Start nav  *******-->
+  <nav class="normal-nav bg_shap">
+    <div class="container">
+
+      <div class="menu d-flex flex-wrap align-items-center">
+
+        <!-- logo -->
+        <div class="d-flex gap-lg-4 gap-2 align-items-center">
+          <img src="assets/imgs/bars.svg" width="20" class="cu-pointer" alt="bars" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+
+          <a href="index.html" class="">
+            <img src="assets/imgs/logo.svg" data-src="assets/imgs/logo.svg" class="logo lazyload" alt="logo" />
+          </a>
+        </div>
+
+        <!-- menu links -->
+        <ul class="menu-links">
+          <li class="active">
+            <a href="index.html">الرئيسية</a>
+          </li>
+          <li>
+            <a href="ourServices.html">خدماتنا</a>
+          </li>
+          <li>
+            <a href="aboutUs.html">عن إقرار</a>
+          </li>
+          <li>
+            <a href="faqs.html">الاسئلة المتكررة</a>
+          </li>
+          <li>
+            <a href="contactUs.html">تواصل معنا</a>
+          </li>
+          <li>
+            <a href="terms.html">الشروط و الأحكام</a>
+          </li>
+        </ul>
+
+        <!-- buttons -->
+        <div class="d-flex gap-lg-3 gap-2 align-items-center">
+
+          <!-- notifications -->
+          <div class="dropdown">
+            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="not_link">
+                <img src="assets/imgs/bell.png" alt="" class="ic">
+                <span class='count'></span>
+              </div>
+            </button>
+
+            <ul class="dropdown-menu xl left">
+
+              <li>
+                <a href="#" class="not-item">
+                  <div class="icon">
+                    <img src="assets/imgs/bell.png" alt="" class="ic">
+                  </div>
+                  <div class="text w-100">
+                    <div class="c-hint fs13 text-end">11:00 ص</div>
+                    <p class="fs15 c-black mb-0">تم قبول طلبك رقم 123</p>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="not-item">
+                  <div class="icon">
+                    <img src="assets/imgs/bell.png" alt="" class="ic">
+                  </div>
+                  <div class="text w-100">
+                    <div class="c-hint fs13 text-end">11:00 ص</div>
+                    <p class="fs15 c-black mb-0">تم قبول طلبك رقم 123 </p>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="not-item">
+                  <div class="icon">
+                    <img src="assets/imgs/bell.png" alt="" class="ic">
+                  </div>
+                  <div class="text w-100">
+                    <div class="c-hint fs13 text-end">11:00 ص</div>
+                    <p class="fs15 c-black mb-0">تم قبول طلبك رقم 123</p>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="not-item">
+                  <div class="icon">
+                    <img src="assets/imgs/bell.png" alt="" class="ic">
+                  </div>
+                  <div class="text w-100">
+                    <div class="c-hint fs13 text-end">11:00 ص</div>
+                    <p class="fs15 c-black mb-0">تم قبول طلبك رقم 123</p>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- <button class="btn btn-secondary" data-bs-target="#loginModal" data-bs-toggle="modal">تسجيل</button> -->
+
+          <!-- lang -->
+          <div class="dropdown">
+            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/imgs/world.png" alt="" class="drop-ic">
+              <span class="lang drop-text">ع</span>
+              <i class="fa-solid fa-angle-down drop-ic"></i>
+            </button>
+
+            <ul class="dropdown-menu drop-lang left">
+              <li>
+                <a href="#" class="profile-item">العربية</a>
+              </li>
+              <li>
+                <a href="#" class="profile-item">English</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Burger -->
+          <div class="toggle d-block d-md-none">
+            <img src="assets/imgs/bars.svg" width="20" alt="bars">
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+
+    </div>
+  </nav>
+  <!--******* end nav *******-->
+
+  <!-- ******* start offcanvas ******* -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="index.html" class="logo">
+        <img src="assets/imgs/color_logo.png" class="img" alt="logo" />
+      </a>
+
+      <!-- <div>
+        <p class="lh-lg fs15 text-center c-black">
+          عفوا لم تقم بتسجيل الدخول لتتمكن من الوصول الي بيانات طلباتك والملف الشخصي
+        </p>
+        <button class="btn btn-secondary mx-auto" data-bs-target="#loginModal" data-bs-toggle="modal">تسجيل</button>
+      </div> -->
+
+      <div class="mb-4">
+        <div class="d-flex justify-content-center align-items-center gap-2 flex-column">
+          <img src="assets/imgs/profile.png" alt="" class="circle_img">
+          <span class="fs15 c-secondary">محمد أشرف</span>
+        </div>
+      </div>
+
+      <ul class='offcanvas-links'>
+        <li class="fs16 c-primary fw-bold">طلباتي</li>
+        <li>
+          <a href="newOrders.html">
+            طلبات جديدة
+            <i class="fa-solid fa-angle-left"></i>
+          </a>
+        </li>
+        <li>
+          <a href="currentOrders.html">
+            طلبات حالية
+            <i class="fa-solid fa-angle-left"></i>
+          </a>
+        </li>
+        <li>
+          <a href="finishedOrders.html">
+            طلبات منتهية
+            <i class="fa-solid fa-angle-left"></i>
+          </a>
+        </li>
+        <li>
+          <a href="commercialRecords.html" class="c-black">
+            السجلات التجارية
+            <i class="fa-solid fa-angle-left"></i>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="c-black">
+            الملف الشخصي
+            <i class="fa-solid fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+
+      <button class="btn btn-red mt-5 mx-auto">تسجيل الخروج</button>
+    </div>
+  </div>
+  <!-- ******* end offcanvas ******* -->
+
+  <!--******* start page unique content *******-->
+  <main class='mt-6'>
+
+    <!--**** Start services section ****-->
+    <section class="services_sec py-5">
+      <div class="container">
+
+        <div class="row mb-4">
+          <div class="col-lg-7 col-md-10 mx-auto">
+            <div class="breadcrumb_m mb-3">
+              <a href="ourServices.html" class="breadcrumb_link active">خدماتنا</a>
+              <i class="fa-solid fa-angle-left ic"></i>
+              <span class="breadcrumb_link">الضرائب</span>
+            </div>
+            <p class="c-gray lh-lg text-center">
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس المساحة بنص بديل هذا النص هو نص بديل يمكن ان يستبدل بنص
+              أخر في نفس المساحة بنص بديل
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس
+            </p>
+          </div>
+        </div>
+
+        <h2 class="main_title mx-auto w-fit center fs16 mb-5 black">جميع خدمات الضرائب</h2>
+
+        <!--** Start services cards **-->
+        <div class="services_cards grid-4">
+
+          <!--**** card ****-->
+          <div class="services_card">
+            <h5 class="title c-primary">التصاريح</h5>
+            <p class="services_desc">
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس المساحة بنص بديل
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس المساحة بنص بديل
+            </p>
+            <a href="servicesDetailes.html" class="btn btn-primary main_shadow">المزيد</a>
+          </div>
+
+          <!--**** card ****-->
+          <div class="services_card">
+            <h5 class="title c-primary">التصاريح</h5>
+            <p class="services_desc">
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس المساحة بنص بديل
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس المساحة بنص بديل
+            </p>
+            <a href="servicesDetailes.html" class="btn btn-primary main_shadow">المزيد</a>
+          </div>
+
+          <!--**** card ****-->
+          <div class="services_card">
+            <h5 class="title c-primary">الإقامة</h5>
+            <p class="services_desc">
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس المساحة بنص بديل
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس المساحة بنص بديل
+            </p>
+            <a href="servicesDetailes.html" class="btn btn-primary main_shadow">المزيد</a>
+          </div>
+
+          <!--**** card ****-->
+          <div class="services_card">
+            <h5 class="title c-primary">التأمينات</h5>
+            <p class="services_desc">
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس المساحة بنص بديل
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس المساحة بنص بديل
+            </p>
+            <a href="servicesDetailes.html" class="btn btn-primary main_shadow">المزيد</a>
+          </div>
+
+        </div>
+        <!--** End services cards **-->
+
+      </div>
+    </section>
+    <!--**** End services section ****-->
+
+  </main>
+  <!--******* end page unique content *******-->
+
+  <!--***** Start Footer *****-->
+  <footer class="footer bg_shap">
+    <div class="container">
+
+      <div class="row footer-cards gy-5">
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="foot-content">
+            <a href="index.html">
+              <img src="./assets/imgs/logo.svg" alt="" class="foot-logo">
+            </a>
+            <p class="footer-info">
+              هذا النص هو نص بديل يمكن ان يستبدل بنص أخر في نفس المساحة بنص بديل هذا النص هو نص بديل يمكن
+              ان يستبدل بنص
+              أخر في نفس المساحة بنص بديل
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="foot-content">
+            <h3 class="footer-head">روابط سريعة</h3>
+            <div class="footer-links row">
+
+              <div class="col-6">
+                <a href="index.html" class="link">الرئيسية</a>
+                <a href="ourServices.html" class="link">خدماتنا</a>
+                <a href="aboutUs.html" class="link">عن إقرار</a>
+              </div>
+
+              <div class="col-6">
+                <a href="faqs.html" class="link">الاسئلة المتكررة</a>
+                <a href="contactUs.html" class="link">تواصل معنا</a>
+                <a href="terms.html" class="link">الشروط و الأحكام</a>
+              </div>
+
+            </div>
+
+            <div class="social-icons">
+
+              <a href="#" class="social-ic">
+                <img src="./assets/imgs/social_ic1.png" class="ic" alt="">
+              </a>
+
+              <a href="#" class="social-ic">
+                <img src="./assets/imgs/social_ic2.png" class="ic" alt="">
+              </a>
+
+              <a href="#" class="social-ic">
+                <img src="./assets/imgs/social_ic3.png" class="ic" alt="">
+              </a>
+
+              <a href="#" class="social-ic">
+                <img src="./assets/imgs/social_ic4.png" class="ic" alt="">
+              </a>
+
+              <a href="#" class="social-ic">
+                <img src="./assets/imgs/social_ic5.png" class="ic" alt="">
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="foot-content">
+            <h3 class="footer-head">تواصل معنا</h3>
+            <div class="footer-links soacial-links">
+              <a href="http://wa.me/+201028527723" target="_blank" class="link">
+                <img src="./assets/imgs/mail_ic.png" alt="" class="img">
+                <span>+966 123 456 789</span>
+              </a>
+              <div class="link">
+                <img src="./assets/imgs/map_ic.png" alt="" class="img">
+                <span>الرياض - المملكة العربية السعودية</span>
+              </div>
+              <a href="mailto:abdallahzeko8@gmail.com" target="_blank" class="link">
+                <img src="./assets/imgs/call_ic.png" alt="" class="img">
+                <span>GoldenAnchor@info.sa</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-right">
+        <p class="info">جميع الحقوق محفوظة لـ إقرار</p>
+        <p class="info">تصميم وتنفيذ شركة <a href="https://aait.sa/" target="_blank" class='link'>أوامر
+            الشبكة</a></p>
+      </div>
+
+    </div>
+  </footer>
+  <!--***** End Footer *****-->
+
+  <!-- start scroll-top-->
+  <div id="scroll-top" class="text-center">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <!-- end scroll-top-->
+
+  <!-- Jquery -->
+  <script src="./assets/plugins/jquery/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap 5 -->
+  <script src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="./assets/plugins/OwlCarousel2-2.3.4/dist_2/owl.carousel.min.js"></script>
+  <!-- FancyBox -->
+  <script src="./assets/plugins/FancyBox/jquery.fancybox.min.js"></script>
+  <!-- Select 2 -->
+  <script src="./assets/plugins/select2/select2.js"></script>
+  <!-- intlTelInput -->
+  <script src="./assets/plugins/flag/js/intlTelInput.min.js"></script>
+  <!-- main js file -->
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
